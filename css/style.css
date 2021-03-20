@@ -24,6 +24,7 @@
     font-size: 1.70rem;
     text-transform: uppercase;
     color: #ffff;
+    
 }
 
 nav{
@@ -44,5 +45,39 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
+    color: #ffff;
+}
+
+
+#mysection{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    
+}
+
+#mysection .welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-welcome h1{
+    font-size: 3rem;
+    color: #ffff;
+}
+
+.text-welcome h4{
+    font-size: 1.10rem;
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 1.5rem;
+}
+
+.mybtn{
+    padding: 15px;
+    background-color: #5665D3;
+    outline: none;
+    border: solid black;
     color: #ffff;
 }
