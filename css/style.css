@@ -22,8 +22,8 @@
 
 .logo h3{
     font-size: 1.70rem;
-    text-transform: uppercase;
     color: #ffff;
+    
     
 }
 
@@ -67,17 +67,47 @@ nav ul li a{
     color: #ffff;
 }
 
-.text-welcome h4{
+.text-welcome p{
     font-size: 1.10rem;
     text-align: center;
     color: #ffff;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem auto;
 }
 
 .mybtn{
-    padding: 15px;
-    background-color: #5665D3;
-    outline: none;
-    border: solid black;
-    color: #ffff;
+    margin: 40px auto 0;
+}
+
+.mybtn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #ffff;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    transition: color 0.5s ;
+}
+
+.mybtn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffff;
+    z-index: -1;
+    transition: 0.5s ;
+
+}
+
+.mybtn a:hover span{
+    width: 100%;
+}
+
+.mybtn a:hover{
+    color: #000;
 }
