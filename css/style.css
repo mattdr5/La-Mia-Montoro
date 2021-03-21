@@ -111,3 +111,24 @@ nav ul li a{
 .mybtn a:hover{
     color: #000;
 }
+
+.about{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../imgs/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#about-sec{
+    height: 88%;
+    display: flex;
+    align-items: center;
+}
+
+
+#img-about{
+    width: 100%;
+    
+}
