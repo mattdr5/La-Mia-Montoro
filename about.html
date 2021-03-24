@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Mia Montoro | About</title>
+    <title>La Mia Montoro | Storia</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -14,43 +14,72 @@
         </div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">Storia</a></li>
           <li><a href="">Galleria</a></li>
+          <li><span class="open-sidebar" onclick="openNav()">&#9776;</span></li>
         </ul>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#">Prodotti tipici</a>
+          <a href="#">Contatti</a>
+          <a href="#">Ciao</a>
+        </div>
       </nav>
       <section id="about-sec">
-        <div class="col-about">
+        <div class="col-about col-text">
           <div class="about-head">
             <div class="about-text">
-              <h3>About</h3>
+              <h3>La storia di Montoro</h3>
             </div>
           </div>
           <div class="about-desc">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              doloribus eligendi molestiae et corporis deleniti? Cum nulla quas
-              sint, dolorem enim qui sed provident! Fuga aliquam harum amet
-              pariatur reprehenderit! Aliquid, repellendus consequuntur?
-              Pariatur quam veniam quibusdam obcaecati reprehenderit ipsa quas
-              deserunt voluptatum doloribus laudantium! Voluptatibus et debitis
-              maiores ea dolore. Sapiente, asperiores pariatur? Repellat
-              consectetur deleniti nulla veniam porro. Molestias, reprehenderit
-              molestiae. Temporibus incidunt hic, placeat quibusdam qui ea
-              blanditiis molestiae dolorem doloremque sunt esse mollitia sint
-              nam unde cumque quae voluptates, expedita accusamus ipsa veniam!
-              Repellat, nobis quibusdam. Vero iure nam iste cupiditate. Atque
-              repellendus illum, laudantium praesentium magni expedita debitis
-              voluptatem officia quisquam vitae nam! Doloremque provident ipsum
-              odit, obcaecati exercitationem cumque sed amet illum ut ea.
+              <strong>Montoro</strong> è un comune italiano di 19.739 abitanti
+              (dato Ufficio Anagrafe popolazione residente a fine mese di
+              dicembre 2016), chiamati montoresi, della provincia di Avellino in
+              Campania. Esso si trova a 190 metri sul livello del mare ed è
+              costituito da 15 frazioni: Aterrana, Banzano, Borgo, Caliano,
+              Chiusa, Figlioli, Misciano, Piano, Piazza di Pandola, Preturo, San
+              Bartolomeo, Sant'Eustachio, San Felice, San Pietro, Torchiati.
+              <br /><br />
+              È stato istituito il 3 dicembre 2013 dalla fusione dei comuni di
+              Montoro Inferiore e Montoro Superiore con Legge Regionale n°16
+              dell'11 novembre 2013, pubblicata sul BURC n.63 del 18.11.2013, a
+              fronte del referendum consultivo sull'unificazione del 26 e 27
+              maggio 2013 (in cui, nel 2009, si era già tenuta una consultazione
+              sull'unificazione), terminato con il 77.41% dei votanti
+              complessivi favorevoli all'unificazione.
+              <br /><br />
+              Con Decreto firmato dal Presidente della Repubblica Sergio
+              Mattarella in data 28 aprile 2015, ai sensi dell'art. 18 del
+              Decreto Legislativo 267/200, è stato concesso al Comune di Montoro
+              il titolo onorifico di Città.
+              <br /><br />
+              La maggioranza della popolazione è di religione cristiana di rito
+              cattolico. Il comune appartiene all'Arcidiocesi di
+              Salerno-Campagna-Acerno. L'altra confessione cristiana presente è
+              quella evangelica con la comunità Chiesa Evangelica Pentecostale
+              CCEVAS.
             </p>
           </div>
         </div>
         <div class="col-about">
           <div class="about-img">
-            <img id="img-about" src="imgs/index.jpg" />
+            <img id="img-about" src="imgs/comune-di-montoro.png" />
           </div>
         </div>
       </section>
     </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
   </body>
 </html>
