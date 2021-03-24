@@ -14,9 +14,17 @@
         </div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">Storia</a></li>
           <li><a href="">Galleria</a></li>
+          <li><span class="open-sidebar" onclick="openNav()">&#9776;</span></li>
         </ul>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a>
+          <a href="#">Prodotti tipici</a>
+          <a href="#">Contatti</a>
+          <a href="#">Ciao</a>
+        </div>
       </nav>
       <section id="mysection">
         <div class="welcome">
@@ -38,5 +46,14 @@
       </section>
     </div>
     <script src="js/typewriting.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
   </body>
 </html>
